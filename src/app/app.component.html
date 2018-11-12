@@ -1,0 +1,42 @@
+<body id="" style="width:100%">
+  <div class="row bodyafter">
+    <div class="larger-screen">
+      <div id="pwDiv">
+        <div id="imageDiv">
+          <img src="./assets/images/logo.png" id="logo">
+        </div>
+      </div>
+      <app-banner></app-banner>
+    </div>
+
+    <div class="small-screen">
+      <div class="topBarSmall">
+        <div class="imageDivSmall">
+          <img src="./assets/images/logo.png" id="logo">
+        </div>
+        <app-banner-small (childToggle)="toggleLeftMenu()"></app-banner-small>
+        <!--<span class="glyphicon glyphicon-menu-hamburger" (click)="toggleLeftMenu()"></span>-->
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div [class.larger-screen]="isActive" >
+      <div *ngIf="auth.isAuthenticated()">
+        <app-left-menu></app-left-menu>
+      </div>
+    </div>
+    <div class="container">
+      <nav>
+        <a routerLink="/"></a>
+      </nav>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+    <br />
+    <br />
+    <br />
+    <div class="footer">
+      Copyright &copy; {{today | date:'yyyy'}}  SC Fuels.   All Rights Reserved.
+    </div>
+</body>

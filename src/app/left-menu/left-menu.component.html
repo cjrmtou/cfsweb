@@ -1,0 +1,68 @@
+
+  <div class="panel-group" id="accordion" style="padding-left:20px; width:270px;float:left;">
+    <div class="panel panel-default">
+      <div class="panel-heading" #AcctPH [style.background-color]="AcctPH.BgColor" >
+        <h4 class="panel-title" data-toggle="collapse" data-target="#collapseOne" (click)="changeBgColor(AcctPH)">
+          <span class="glyphicon glyphicon-file" #AcctIcon [style.color]="AcctIcon.Color"></span>
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" #AcctPTA [style.color]="AcctPTA.FontColor">
+            Account Maintenance
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="panelBody1">
+            <span class="glyphicon glyphicon-home text-primary"></span>
+            <a routerLink="/changeaddress">Address Change</a>
+          </div>
+          <div class="panelBody1">
+            <span class="glyphicon glyphicon-question-sign text-primary"></span>
+            <a routerLink="changepassword">Password Change</a>
+          </div>
+          <div class="panelBody1">
+            <span class="glyphicon glyphicon-user text-primary"></span>
+            <a routerLink="manageuser">User Management</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" #InvPH [style.background-color]="InvPH.BgColor" >
+        <h4 class="panel-title" data-toggle="collapse" data-target="#collapseTwo" (click)="changeBgColor(InvPH)">
+          <span class="glyphicon glyphicon-list-alt" #InvIcon [style.color]="InvIcon.Color"></span>
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" #InvPTA [style.color]="InvPTA.FontColor">
+            Invoice Inquiries & Reports
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="panelBody2">
+            <span class="glyphicon glyphicon-credit-card text-danger"></span>
+            <a routerLink="vehiclecard">Vehicle Card Information/Edit</a>
+          </div>
+          <div class="panelBody2">
+            <span class="glyphicon glyphicon-user text-danger"></span>
+            <a routerLink="driverinfo">Driver Information/Edit</a>
+          </div>
+          <div class="panelBody2">
+            <span class="glyphicon glyphicon-book text-danger"></span>
+            <a routerLink="/transactions">Transactions</a>
+          </div>
+          <div class="panelBody2">
+            <span class="glyphicon glyphicon-list text-danger"></span>
+            <a routerLink="invoices">Invoices</a>
+          </div>
+          <div class="panelBody2">
+            <span class="glyphicon glyphicon-edit text-danger"></span>
+            <a routerLink="truckstats">Truck OBD Stats</a>
+          </div>
+          <div class="panelBody2">
+            <span class="glyphicon glyphicon-envelope text-danger"></span>
+            <a routerLink="truckalerts">Truck OBD Alerts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

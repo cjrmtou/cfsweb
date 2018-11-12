@@ -1,0 +1,11 @@
+<div class="large-screen pwFontDiv">
+  <span>SC FUELS CARD</span>
+  <span *ngIf="!auth.isAuthenticated()" class="loginStyle">
+    <a routerLink="login" class="loginText"> Login </a>
+  </span>
+  <span *ngIf="auth.isAuthenticated()" class="loginStyle">
+    <a href="#" class="loginText" (click)="logout()">Log out </a><br />
+    {{auth.currentUser.firstName}} {{auth.currentUser.lastName}}
+  </span>
+</div>
+

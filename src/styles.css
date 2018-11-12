@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    color: #212529;
+    /*background-color:#dddddd;*/
+  }
+  
+  #pwDiv {
+    width: 275px;
+    padding-left: 15px;
+    float: left;
+  }
+  
+  .bodyafter {
+    padding-bottom: 35px;
+  }
+  
+  @media screen and (min-width:500px) {
+    .larger-screen {
+      display: block;
+    }
+  
+    .small-screen {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width:499px) {
+    .larger-screen {
+      display: none;
+    }
+  
+    .small-screen {
+      display: block;
+    }
+  }
+  
+  #imageDiv {
+    background: #C90000;
+    width: 260px;
+    height: 90px;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+  }
+  
+  .footer {
+    background-color: #181c20;
+    text-align: center;
+    color: white;
+    position: fixed;
+    height: 35px;
+    width: 100%;
+    margin: auto;
+    padding-top: 8px;
+    bottom: 0;
+    z-index: 999;
+  }
+  
+  #pageTitle {
+    height: 50px;
+    font-size: 16px;
+    color: #d2322d;
+    font-weight: bold;
+  }
+
+.glyphicon {
+  margin-right: 10px;
+}
+
+.panel-body {
+  padding: 0;
+}
+
+  .panel-body table tr td {
+    padding-left: 15px
+  }
+
+  .panel-body .table {
+    margin-bottom: 0;
+  }
+
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.loginStyle {
+  font-size: 12px;
+  font-weight: normal;
+  float: right;
+  padding-right: 25px;
+  padding-top: 10px;
+}
+
+.loginText {
+  color: white;
+}
+

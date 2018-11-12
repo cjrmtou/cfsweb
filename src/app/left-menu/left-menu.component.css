@@ -1,0 +1,48 @@
+/*.panel-heading .accordion-toggle:after {  
+  font-family: 'Glyphicons Halflings'; 
+  content: "\e114"; 
+  float: right; 
+  color: grey; 
+  font-size:10px;
+  margin-right:-10px;
+
+}
+
+.panel-heading .accordion-toggle.collapsed:after {  
+  content: "\e080";  
+}*/
+
+.panel-body {
+  font-size: 12px;
+}
+
+.panel-title {
+  position: relative;
+  font-size:13px;
+  font-weight:bold;
+}
+
+.panel-title::after {
+  content: "\f105";
+  color: #333;
+  top: 1px;
+  right: 0px;
+  position: absolute;
+  font-family: "FontAwesome"
+}
+
+.panel-title[aria-expanded="true"]::after {
+  content: "\f107";
+}
+
+.panelBody1 {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.panelBody2 {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+
